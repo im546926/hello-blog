@@ -71,9 +71,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hexo-trial/hexo-trial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-hexo-trial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/hello-blog/2021/09/27/hexo-trial/hexo-trial/" class="article-date">
+    <a href="/hello-blog/2021/09/27/hexo-trial/" class="article-date">
   <time class="dt-published" datetime="2021-09-27T10:59:33.000Z" itemprop="datePublished">2021-09-27</time>
 </a>
     
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/hello-blog/2021/09/27/hexo-trial/hexo-trial/">hexo_trial</a>
+      <a class="p-name article-title" href="/hello-blog/2021/09/27/hexo-trial/">hexo_trial</a>
     </h1>
   
 
@@ -93,14 +93,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="这是一个测试博客"><a href="#这是一个测试博客" class="headerlink" title="这是一个测试博客"></a>这是一个测试博客</h2><p>用于测试图片是否可以正常显示</p>
-<p>图片如下：</p>
-<p><img src="/hello-blog/hello-blog/2021/09/27/hexo-trial/hexo-trial/RollerSkatingDoodle.png"></p>
+        <h2 id="创建-Blog-遇到的种种问题"><a href="#创建-Blog-遇到的种种问题" class="headerlink" title="创建 Blog 遇到的种种问题"></a>创建 Blog 遇到的种种问题</h2><p>1.没有初始化本地仓库，导致在执行一些命令的时候，频繁报错<br><img src="/hello-blog/hello-blog/2021/09/27/hexo-trial/1.png"><br>这是在我将本地仓库和远程 github 仓库进行连接时报错<br>该报错显示：没有 .git 仓库 （repository：仓库）<br>此时需要执行以下指令  </p>
+<pre><code>$ git init
+</code></pre>
+<p>来进行本地仓库的初始化<br><img src="/hello-blog/hello-blog/2021/09/27/hexo-trial/3.png"><br>初始化完成后，重新连接远程仓库，git 页面显示如下，则成功<br><img src="/hello-blog/hello-blog/2021/09/27/hexo-trial/4.png">  </p>
+<p>2.同样是没有初始化本地仓库的时候，向远程仓库进行 deploy 报错，报错内容如下<br><img src="/hello-blog/hello-blog/2021/09/27/hexo-trial/2.png"><br>但最初没有初始化本地仓库，仍然成功了几次 deploy，目前不知道原因，留个小 bug 在这里  </p>
+<p>3.不管是线下环境，还是线上域名，图片都没有进行成功加载，同样留一个小bug  </p>
+<p>4.最后感谢一下分享博客的大佬，手把手看教程算是成功搭建了自己的博客吧，希望日后能自己完善，在此奉上大佬的博客链接<br><a target="_blank" rel="noopener" href="https://zlhad.top/2020/10/05/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">https://zlhad.top/2020/10/05/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</a>  </p>
+<p>2021-9-27</p>
+<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/hexo-trial/hexo-trial/" data-id="cku2plh3g00014wu26bw09wic" data-title="hexo_trial" class="article-share-link">分享</a>
+      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/hexo-trial/" data-id="cku2qnm6f00021wu2giuua7b4" data-title="hexo_trial" class="article-share-link">分享</a>
       
       
       
@@ -167,7 +173,7 @@ function test() &#123;
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/%E4%BD%A0%E5%A5%BD%E5%95%8A-%E4%B8%96%E7%95%8C/" data-id="cku2plh3h00024wu28opchl49" data-title="Markdown 语法练习" class="article-share-link">分享</a>
+      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/%E4%BD%A0%E5%A5%BD%E5%95%8A-%E4%B8%96%E7%95%8C/" data-id="cku2qnm6e00011wu20j4ebc4w" data-title="Markdown 语法练习" class="article-share-link">分享</a>
       
       
       
@@ -209,18 +215,27 @@ function test() &#123;
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
+<p>In short</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
+<p>In short</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>In short</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/hello-world/" data-id="cku2plh3700004wu26lvx1fut" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="https://im546926.github.io/hello-blog/2021/09/27/hello-world/" data-id="cku2qnm6900001wu282nc80lo" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -277,7 +292,7 @@ function test() &#123;
       <ul>
         
           <li>
-            <a href="/hello-blog/2021/09/27/hexo-trial/hexo-trial/">hexo_trial</a>
+            <a href="/hello-blog/2021/09/27/hexo-trial/">hexo_trial</a>
           </li>
         
           <li>
