@@ -33,8 +33,14 @@
 <meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20210928213039632.png">
 <meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20210928213127900.png">
 <meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20210928213323055.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001134655071.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001134840256.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001134918914.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001134538022.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001135323515.png">
+<meta property="og:image" content="https://github.com/hello-blog/2021/09/27/hexo-trial/image-20211001135452567.png">
 <meta property="article:published_time" content="2021-09-27T10:59:33.000Z">
-<meta property="article:modified_time" content="2021-09-28T13:39:28.739Z">
+<meta property="article:modified_time" content="2021-10-01T05:56:48.753Z">
 <meta property="article:author" content="Muyao_l1">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Bug">
@@ -182,11 +188,24 @@
 <hr>
 <h3 id="考证"><a href="#考证" class="headerlink" title="考证"></a>考证</h3><p>不可  <img src="/hello-blog/2021/09/27/hexo-trial/image-20210928213323055.png" class>  </p>
 <p>但可以通过此方法迅速将想要添加的图片复制到目标md文件的同名文件夹中，后面再另改格式即可，目前没想到其他解决方法</p>
+<hr>
+<p>2021-10-1  </p>
+<p>域名过审了  </p>
+<p>然后按照网上的教程，将github仓库绑定到自己的域名：  </p>
+<p>首先在cmd中ping一下自己的github仓库，得到ip地址  <img src="/hello-blog/2021/09/27/hexo-trial/image-20211001134655071.png" class>  这里由于中国大陆是IPV4的地址，然而[]中是IPV6的地址，所以看不懂很正常  </p>
+<p>看一下ping都有哪些指令  <img src="/hello-blog/2021/09/27/hexo-trial/image-20211001134840256.png" class>  </p>
+<p>那就在ping的命令后面加点东西，重新ping一下 <img src="/hello-blog/2021/09/27/hexo-trial/image-20211001134918914.png" class>  成功得到github仓库的ip地址  </p>
+<p>接下来打开自己的购买域名的平台，进行域名解析，添加A和CNAME记录，CNAME填写域名，A填写ip  </p>
+<img src="/hello-blog/2021/09/27/hexo-trial/image-20211001134538022.png" class>
+
+<p>绑定域名有两种情况，带www的和不带www的，A记录就是为了能够绑定不带www的域名，这样操作完之后，无论是否添加www，域名都可以访问  </p>
+<p>然后到github项目的根目录创建一个CNAME文件（无后缀），里面填写域名，如果自动创建了，则直接修改就好<img src="/hello-blog/2021/09/27/hexo-trial/image-20211001135323515.png" class></p>
+<p> 最后，在github的Settings中的Pages设置中，添加自己的域名即可<img src="/hello-blog/2021/09/27/hexo-trial/image-20211001135452567.png" class>  看到上方的绿色框显示网址已被成功部署，就大功告成啦</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/im546926/hello-blog.git/2021/09/27/hexo-trial/" data-id="cku74xmin0006i0u276a9cmop" data-title="hexo_trial" class="article-share-link">分享</a>
+      <a data-url="https://github.com/im546926/hello-blog.git/2021/09/27/hexo-trial/" data-id="cku7yet8k0008h8u21tmd423y" data-title="hexo_trial" class="article-share-link">分享</a>
       
       
       
